@@ -1,0 +1,160 @@
+:root {
+    --red:#E50914;
+    --black:#141414;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--black);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--red);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+    text-decoration:none;
+}
+
+.textinput {
+    margin-left: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.textinput i {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.textinput i:hover {
+    -webkit-transform:scale(1.1); /* Safari and Chrome */
+    -moz-transform:scale(1.1); /* Firefox */
+    -ms-transform:scale(1.1); /* IE 9 */
+    -o-transform:scale(1.1); /* Opera */
+    transform:scale(1.05); 
+    transition: .4s ease all;
+}
+
+.pesquisar {
+    border-radius: 20px;
+    height: 20px;
+    border: none;
+    background: var(--black);
+    color: white;
+    border-bottom: 1px solid white;
+    outline: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* Filme Principal */
+
+.filme_principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/main\ \(18\).jpg);
+    
+    height: 400px;
+    background-size: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme_principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo {
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btn {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    color: var(--black);
+    transition: .3s ease all;
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme_principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 70%;
+    width: 90%;
+    display: block;
+}
+
+.box-filme img:hover {
+    -webkit-transform:scale(1.1); /* Safari and Chrome */
+    -moz-transform:scale(1.1); /* Firefox */
+    -ms-transform:scale(1.1); /* IE 9 */
+    -o-transform:scale(1.1); /* Opera */
+    transform:scale(1.1); 
+    transition: .4s ease all;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.classe-filmes {
+    padding: 10px;
+}
+
+.info {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.hide {
+    display: none;
+}
